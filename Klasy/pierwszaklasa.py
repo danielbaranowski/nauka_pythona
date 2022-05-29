@@ -10,6 +10,12 @@ class Rakietka:
         self.kolor_obiektu = kolor
         print(f"Utworzyliśmy obiekt o kolorze: {self.kolor_obiektu} - ID: {id(self)}")
 
+    def info(self):
+        print(f"Kolor obiektu to: {self.kolor_obiektu}")
+
+    def info_ex(self, nazwa):
+        print(f"Kolor obiektu {nazwa} to: {self.kolor_obiektu}")
+
 #  tworzymy obiekt na podstawie klasy, podajeemy nazwę obiektu (rakietka_a) i wywołujemy konstruktor klasy (Rakietka())
 # f-string
 # val = 'Python course'
@@ -30,3 +36,7 @@ def testklasy():
     print("*****************************")
     print(f"Kolor dla rakietka_a: {rakietka_a.kolor_obiektu}")
     print(f"Kolor dla rakietka_b: {rakietka_b.kolor_obiektu}")
+    rakietka_a.info()
+    rakietka_b.info()
+    rakietka_a.info_ex("rakietka_a")
+    rakietka_b.info_ex("rakietka_b")
